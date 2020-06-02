@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="visitstyle.css">
+	<title>MINJAE's WEB</title>
+	<script src="./visit.js" ></script>
+</head>
+<body>
+	<header>
+		<div class="center"><h1 class="padding"><a href="./index.html">MINJAE HOME</a></h1></div>
+	</header>
+	<section>
+		<header>
+			<div class="center">
+				<span class="padding2"><a href="./introduction.html">INTRODUTION</a></span>
+				<span class="padding2"><a href="./trip.html">TRIP</a></span>
+				<span class="padding2"><a href="./bucketlist.html">BUCKET LIST 10</a></span>
+				<span class="padding2"><a href="./visit.html">VISIT</a></span>
+			</div>
+		</header>
+		<article>
+			<div class="center">
+				<fieldset> 
+					<table border="1px" width="900px" id="dynamicTable">
+						<thead>
+							<tr>
+								<th>이름</th>
+								<th>내용</th>
+							</tr>
+							<tr>
+								<td><input type="text" placeholder="이름" id="inName"></td>
+								<td><input type="text" placeholder="내용" id="inText"></td>
+								<td><button onclick="tableCreate()">append</button></td>
+							</tr>
+						</thead>
+						<tbody id="dynamicTbody"></tbody>
+					</table>
+				</fieldset>
+			</div>
+		</article>
+	</section>
+</body>
+</html>
